@@ -1,3 +1,4 @@
+---
 apiVersion: batch/v1
 kind: Job
 metadata:
@@ -10,12 +11,12 @@ spec:
     spec:
       serviceAccountName: argocd-server
       containers:
-      - name: sleep
-        image: ubuntu:latest
-        command:
-        - /bin/sh
-        - -c
-        - |
-          sleep 30
+        - name: sleep
+          image: ubuntu:latest
+          command:
+            - /bin/sh
+            - -c
+            - |
+              sleep 30
       restartPolicy: Never
   backoffLimit: 1
