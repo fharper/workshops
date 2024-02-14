@@ -6,6 +6,7 @@ data:
   application.resourceTrackingMethod: annotation
   admin.enabled: 'true'
   statusbadge.enabled: 'true'
+  users.anonymous.enabled: 'false'
   resource.customizations: |
     argoproj.io/Application:
       health.lua: |
