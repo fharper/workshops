@@ -58,7 +58,7 @@ argocd login localhost:8080 --username admin --insecure
 You can either deploy the registry using `kubectl` using
 
 ```shell
-kubectl apply -f https://github.com/fharper/workshops/blob/main/argocd/sync-waves/registry/registry.yaml
+kubectl apply -f https://raw.githubusercontent.com/fharper/workshops/main/argocd/sync-waves/registry/registry.yaml
 ```
 
 Watch the glory of sync waves :)
