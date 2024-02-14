@@ -10,7 +10,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/kubefirst/workshops.git
+    repoURL: https://github.com/fharper/workshops.git
     path: argocd/sync-waves/registry
     targetRevision: HEAD
   destination:
