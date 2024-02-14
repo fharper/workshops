@@ -61,4 +61,10 @@ You can either deploy the registry using `kubectl` using
 kubectl apply -f https://raw.githubusercontent.com/fharper/workshops/main/argocd/sync-waves/registry/registry.yaml
 ```
 
+You can also use `argocd` if you prefer
+
+```shell
+argocd app create -f https://raw.githubusercontent.com/fharper/workshops/main/argocd/sync-waves/registry/registry.yaml
+```
+
 Watch the glory of sync waves :)
