@@ -5,7 +5,7 @@ metadata:
   name: ten-wave-twenty-sleep
   namespace: argocd
   annotations:
-    argocd.argoproj.io/sync-wave: 20
+    argocd.argoproj.io/sync-wave: "20"
 spec:
   template:
     spec:
