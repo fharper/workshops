@@ -12,10 +12,20 @@ k3d cluster create kubefirst-demo --agents "1" --agents-memory "4096m"
 
 ### Install Argo CD
 
+To simply install Argo CD, you can use `kubectl`.
+
 ```shell
 kubectl create namespace argocd
 kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
 ```
+
+We suggest that you use our customization to bring back the app of apps sync wave Argo CD feature that was removed in 1.8. You can do this using that command
+
+```shell
+kubectl apply -k https://github.com/fharper/workshops/argocd/manifest
+```
+
+More information in [their documentation](https://argo-cd.readthedocs.io/en/stable/operator-manual/health/#argocd-app), and in [this issue](https://github.com/argoproj/argo-cd/issues/4577).
 
 ### Access Argo CD
 
