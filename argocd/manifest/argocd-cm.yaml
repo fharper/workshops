@@ -7,7 +7,7 @@ data:
   admin.enabled: 'true'
   statusbadge.enabled: 'true'
   #For demo purpose, don't do this at home kids!
-  #users.anonymous.enabled: 'false'
+  users.anonymous.enabled: 'true'
   resource.customizations: |
     argoproj.io/Application:
       health.lua: |
