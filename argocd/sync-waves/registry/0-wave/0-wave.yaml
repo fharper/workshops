@@ -2,7 +2,7 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: zero-wave-zero-sleep
+  name: 0-wave-0-sleep
   namespace: argocd
   annotations:
     argocd.argoproj.io/sync-wave: "0"
@@ -17,6 +17,6 @@ spec:
             - /bin/sh
             - -c
             - |
-              sleep 30
+              sleep 10
       restartPolicy: Never
   backoffLimit: 1
