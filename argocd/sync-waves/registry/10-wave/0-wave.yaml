@@ -17,6 +17,6 @@ spec:
             - /bin/sh
             - -c
             - |
-              sleep 10
+              sleep 5
       restartPolicy: Never
   backoffLimit: 1
