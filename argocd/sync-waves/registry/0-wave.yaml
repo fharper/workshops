@@ -5,7 +5,7 @@ metadata:
   name: 0-sync-wave
   namespace: argocd
   annotations:
-    argocd.argoproj.io/sync-wave: '0'
+    argocd.argoproj.io/sync-wave: "0"
 spec:
   project: default
   source:
